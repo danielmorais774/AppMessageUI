@@ -16,9 +16,7 @@ const StoryItem = ({item}: IStoryObject) => {
       <View>
         <ProfileImage
           isActiveBorder={item.type === 'add' || item.hasUnreadStories}
-          source={{
-            uri: item.avatarUrl,
-          }}
+          source={item.avatar}
         />
         {item.type === 'add' && (
           <ContainerIcon>

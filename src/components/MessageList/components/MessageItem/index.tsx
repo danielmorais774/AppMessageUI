@@ -21,7 +21,7 @@ const MessageItem = ({item}: IMessageObject) => {
     <Container>
       <ProfileImage
         isActiveBorder={item.hasUnreadStories}
-        source={{uri: item.avatarUrl}}
+        source={item.avatar}
       />
       <View style={{flex: 1, marginLeft: 15}}>
         <ProfileName>{item.name}</ProfileName>
